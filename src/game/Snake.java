@@ -1,29 +1,22 @@
-package SnakeServer;
+package game;
 
-import java.awt.EventQueue;
+
 import javax.swing.JFrame;
 
 public class Snake extends JFrame {
 
     public Snake() {
-        
         initUI();
     }
     
     private void initUI() {
         
-        add(new Board());
-               
+
         setResizable(false);
         pack();
         
         setTitle("Snake");
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    }
-    
-
-    public static void main(String[] args) {
-        Server.Start(2000);
     }
 }
