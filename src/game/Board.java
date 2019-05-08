@@ -129,7 +129,7 @@ public class Board extends JPanel{
     private class TAdapter extends KeyAdapter {
         @Override
         public void keyPressed(KeyEvent e) {
-
+            //Client tarafından tuşlara basıldığında hangi tuşa basıldığı bilgisini server tarafına gönderme
             int key = e.getKeyCode();
             Message msg;
             switch (key){
